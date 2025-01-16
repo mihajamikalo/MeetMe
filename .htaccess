@@ -1,0 +1,14 @@
+# Activer le moteur de réécriture
+RewriteEngine On
+
+# Vérifier si la requête pointe vers un fichier ou un dossier existant
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rediriger toutes les autres requêtes vers index.php
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+<FilesMatch "\.(log|txt|controllers)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>

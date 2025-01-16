@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   
+    padding-top: 0;
+    margin-top: 0;
+}
+
+header h1 {
+    font-family: cursive;
+    margin: 5px 0 15px 0;
+    font-size: 40px;
+    background: linear-gradient(100deg, rgba(255, 228, 225, 1) 0%, rgba(224, 176, 255, 1) 10%, rgba(139, 0, 139, 1) 30%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
+
+.information {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 5px 20px;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    background: white;
+}
+
+.title h2 {
+    text-align: center;
+    font-weight: 900;
+    color: #8b008b;
+}
+
+form {
+    min-width: 60vw;
+    min-height: 45vh;
+}
+
+form .log {
+    margin-top: 20px;
+}
+
+form .log_enter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form .log_enter label {
+    color: gray;
+    text-transform: none;
+}
+
+form .log_enter input {
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    font-weight: 900;
+    padding: 15px 5px;
+    background: linear-gradient(to left, #8b008b, #ffe4e1);
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #8b008b, #ffe4e1);
+}
+
+form .cookie {
+    margin: 20px;
+}
+
+form .note {
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+form .note a {
+    text-decoration: none;
+    color: #8b008b;
+    font-weight: 600;
+}
